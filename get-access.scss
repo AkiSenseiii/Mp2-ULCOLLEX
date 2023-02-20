@@ -1,0 +1,264 @@
+body {
+    background-color: rgb(23, 23, 23);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+   
+  }
+
+
+  #nav-logo {
+    font-family:  'Tourney', 'cursive';
+  }
+
+  .h1 {
+    font-family:  'Tourney', 'cursive';
+    font-weight: 400;
+    line-height: 90%;
+    font-style: italic;
+    letter-spacing: -5px;
+    word-spacing: -3px;
+    
+  }
+
+  .h1-3 {
+    position: relative;
+    font-weight: 300;
+    font-size: 8.65em;
+    font-family:  'Tourney', 'cursive';
+    font-style: italic;
+    letter-spacing: -13px;
+    color: #fff;
+    word-spacing: -8px;
+    line-height: 80%;
+    
+  }
+
+  #head {
+    margin-top: 170px;
+  }
+  
+
+  .gradient-span {
+    background-image: linear-gradient(178.45deg,#558bad 32%,rgba(106,170,209,0) 47%,#be78bf 65%,rgba(118,76,119,0) 84.99%),linear-gradient(180deg,#fbfbfb,#fbfbfb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-content {
+    background-color: rgba(0, 0, 0, 0.374);
+    height: 57vh;
+    z-index: -1;
+    box-shadow: 1px 1px 1px 1px rgb(80, 80, 80);
+    border-radius: 15px;
+ 
+  }
+ 
+// NAVBAR
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1;
+  height: 75px;
+}
+
+.navbar.hide {
+  top: -75px;
+}
+
+#navbar-sm.hide {
+  top: -75px;
+}
+
+  #navbar-sm {
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed; 
+    z-index: 10; 
+    background-color: black;
+    transition: top 0.5s;
+    width: 100%
+   
+   }
+  
+    #nav-logo {
+      font-family:  'Tourney', 'cursive';
+    }
+    
+    #nav-logo2 {
+      font-family:'Press Start 2P', 'cursive';
+    }
+
+    #content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+    }
+    
+    #content.show {
+      display: block;
+      opacity: 1;
+    }
+
+
+   // CONTENT-1 
+
+   .sub-text {
+    color: rgb(163, 163, 163);
+   }
+   // CONTENT-2
+   
+   #pink-text {
+    color: rgb(213, 98, 217);
+
+   }
+   .card {
+    width: 190px;
+    height: 254px;
+    background: rgb(56, 56, 78);
+    background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+    box-shadow: 4px 6px 14px #00000036;
+    border-radius: 3px;
+    color: #F9F9F9;
+    padding: 16px;
+    transition: all .3s;
+   }
+   
+   .card:hover {
+    margin-top: -30px;
+   }
+
+  div {
+  position: relative;
+}
+
+#clickable-image {
+  cursor: pointer;
+}
+
+   
+    // GLOBAL BUTTON
+
+  .button-1 {
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 9px;
+    font-family:'Press Start 2P', 'cursive';
+    color: #fff;
+    width: 13em;
+    height: 5em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 10px;
+    z-index: 1;
+   }
+   
+   .button-1:hover {
+    animation: ani 8s linear infinite;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   .button-1:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+   }
+   
+   .button-1:hover::before {
+    filter: blur(20px);
+   }
+   
+   .button-1:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   }
+
+
+   // FOOTER
+
+   .custom-shape-divider-bottom-1676534350 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1676534350 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 238px;
+    
+  }
+  
+  .custom-shape-divider-bottom-1676534350 .shape-fill {
+    fill: #FFFFFF;
+  }
+  
+  #twitter {
+   width: 40px;
+  }
+  
+  #discord {
+    width: 45px;
+  }
+   
+  #linked-in {
+    width: 35px;
+  }
+  
+  #facebook {
+    width: 50px;
+  }
+  
+  #instagram {
+    width: 35px;
+  }
+  
+  #youtube {
+    width: 40px;
+    height: 35px;
+  }
+  
+  .text-hover:hover {
+     color: rgb(119, 211, 234);
+  }
+
+  footer {
+    background-color: black;
+    padding-bottom: 5px;
+
+  }

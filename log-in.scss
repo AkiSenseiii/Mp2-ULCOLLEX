@@ -1,0 +1,402 @@
+
+body {
+    background-color: rgb(34, 33, 33);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+   
+  }
+
+  #nav-logo {
+    font-family:  'Tourney', 'cursive';
+  }
+
+  .h1 {
+    font-family:  'Tourney', 'cursive';
+    font-weight: 400;
+    line-height: 90%;
+    font-style: italic;
+    letter-spacing: -5px;
+    word-spacing: -3px;
+    
+  }
+
+  .h1-3 {
+    position: relative;
+    font-weight: 350;
+    font-size: 10.65em;
+    font-family:  'Tourney', 'cursive';
+    font-style: italic;
+    letter-spacing: -13px;
+    color: #fff;
+    word-spacing: -8px;
+    line-height: 80%;
+    
+  }
+
+  #head {
+    margin-top: 170px;
+  }
+  
+
+  .gradient-span {
+    background-image: linear-gradient(178.45deg,#558bad 32%,rgba(106,170,209,0) 47%,#be78bf 65%,rgba(118,76,119,0) 84.99%),linear-gradient(180deg,#fbfbfb,#fbfbfb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+ 
+// NAVBAR
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1;
+  height: 75px;
+}
+
+.navbar.hide {
+  top: -75px;
+}
+
+#navbar-sm.hide {
+  top: -75px;
+}
+
+  #navbar-sm {
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed; 
+    z-index: 10; 
+    background-color: black;
+    transition: top 0.5s;
+    width: 100%
+   
+   }
+  
+    #nav-logo {
+      font-family:  'Tourney', 'cursive';
+    }
+    
+    #nav-logo2 {
+      font-family:'Press Start 2P', 'cursive';
+    }
+
+    #content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+    }
+    
+    #content.show {
+      display: block;
+      opacity: 1;
+    }
+
+// LOG-IN
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background: rgba(0,0,0,.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+  
+  .login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 3px
+  }
+  
+  .login-box .input-a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+  }
+
+
+  // GLOBAL BUTTON
+
+  .button-1 {
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 9px;
+    font-family:'Press Start 2P', 'cursive';
+    color: #fff;
+    width: 13em;
+    height: 5em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 10px;
+    z-index: 1;
+   }
+   
+   .button-1:hover {
+    animation: ani 8s linear infinite;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   .button-1:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+   }
+   
+   .button-1:hover::before {
+    filter: blur(20px);
+   }
+   
+   .button-1:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   }
+
+   // FOOTER
+
+   .custom-shape-divider-bottom-1676534350 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1676534350 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 238px;
+    
+  }
+  
+  .custom-shape-divider-bottom-1676534350 .shape-fill {
+    fill: #FFFFFF;
+  }
+  
+  #twitter {
+   width: 40px;
+  }
+  
+  #discord {
+    width: 45px;
+  }
+   
+  #linked-in {
+    width: 35px;
+  }
+  
+  #facebook {
+    width: 50px;
+  }
+  
+  #instagram {
+    width: 35px;
+  }
+  
+  #youtube {
+    width: 40px;
+    height: 35px;
+  }
+  
+  .text-hover:hover {
+     color: rgb(119, 211, 234);
+  }
+
+  footer {
+    background-color: black;
+    padding-bottom: 5px;
+  }
+

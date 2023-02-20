@@ -1,0 +1,3455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="image/icon.png" />
+    <link rel="stylesheet" href="get-access.scss" />
+    <link rel="stylesheet" href="get-access.css" />
+    <title>ULCOLLEX</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="row d-none d-sm-block">
+      <nav
+        class="navbar navbar-expand-lg"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          width: 100%;
+          transition: top 0.3s;
+          z-index: 100;
+          height: 75px;
+        "
+      >
+        <div id="nav-1" class="col-3">
+          <a id="nav-logo" class="navbar-brand ms-5" href="home.html"
+            ><img src="image/icon.png" width="35px" class="me-1" /><span
+              class="text-light"
+              >ULCOLLEX</span
+            ></a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav-2" class="col-10">
+          <div
+            class="collapse navbar-collapse d-flex justify-content-start"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto mb-1">
+              <li class="nav-item me-5 mt-1">
+                <a id="nav-logo" class="nav-link text-light" href="#"
+                  >DISCOVER
+                </a>
+              </li>
+              <li class="nav-item me-5 mt-1">
+                <a id="nav-logo" class="nav-link text-light" href="#"
+                  >BLUE PRINT
+                </a>
+              </li>
+              <li class="nav-item me-5 mt-1">
+                <a id="nav-logo" class="nav-link text-light" href="log-in.html"
+                  >BE OUR CREATOR</a
+                >
+              </li>
+              <li id="nav-btn" class="nav-item" style="margin-left: 74vh">
+                <button class="button-1" onclick="logout()">LOG OUT</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- NAVBAR-SM -->
+    <nav id="navbar-sm" class="d-block d-sm-none">
+      <a id="nav-logo" class="navbar-brand fs-1 mb-5" href="home.html"
+        ><img src="image/icon.png" width="35px" /><span class="text-light ms-1"
+          >ULCOLLEX</span
+        ></a
+      >
+      <button
+        class="button-1"
+        id="toggle-btn"
+        style="width: 6vh; height: 5vh; margin-left: 120px"
+      >
+        =
+      </button>
+      <div
+        id="content"
+        class="text-light mt-3"
+        style="line-height: 200%; font-family: 'Tourney', 'cursive'"
+      >
+        <ul>
+          <li><a class="nav-link fs-3" href="#">DISCOVER</a></li>
+          <li><a class="nav-link fs-3" href="#">BLUEPRINT</a></li>
+          <li>
+            <a class="nav-link fs-3 mb-3" href="log-in.html">BE OUR CREATOR</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- CAROUSEL-->
+    <h3
+      class="h1-3 text-center text-light mb-5 d-none d-sm-block"
+      style="margin-top: 15vh"
+    >
+      EXCLUSIVE<br /><span class="gradient-span">COLLECTIIONS</span>
+    </h3>
+    <div
+      class="bg-content container d-none d-sm-block"
+      style="margin-top: 10vh; padding-bottom: 20vh"
+    >
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="content-1 carousel-inner">
+          <div class="carousel-item active">
+            <h3 id="nav-logo2" class="text-light text-center mb-5 mt-4">
+              HUGO 1.0
+            </h3>
+            <div class="row" style="height: 55vh">
+              <div class="col-3 mt-5 ms-3">
+                <img
+                  src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/07OlMVvuyBKm.jpg"
+                  style="width: 7vh; height: 7vh; border-radius: 50px"
+                /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                  >By :</span
+                >
+                <span class="text-light fs-5" style="font-size: 19px"
+                  >Ben Liu</span
+                >
+                <br />
+                <div class="mt-3">
+                  <img
+                    src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/FvK2ZJ7fIweQ.jpeg"
+                    style="width: 7vh; height: 7vh; border-radius: 15px"
+                  /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                    >In :</span
+                  >
+                  <span class="text-light fs-5" style="font-size: 19px"
+                    >Down to Earth Hugo</span
+                  >
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/pCUWLXu9IFvR.png"
+                  class="d-block w-100"
+                  style="max-width: 45vh; height: 48vh"
+                />
+              </div>
+              <div
+                class="col-4 box"
+                style="
+                  background-color: rgb(0, 0, 0);
+                  border: 1px solid rgba(220, 220, 220, 0.732);
+                  max-height: 20vh;
+                  margin-top: 30vh;
+                  margin-left: 5vh;
+                  border-radius: 10px;
+                "
+              >
+                <div class="row">
+                  <div class="col-5 mt-3 ms-5">
+                    <span class="sub-text" style="font-size: 19px"
+                      >Edition Quantity</span
+                    ><br /><span style="font-size: 19px" class="text-light fs-2"
+                      ><b>50</b></span
+                    >
+                  </div>
+                  <div class="col-5 mt-3 ms-4">
+                    <span class="sub-text" style="font-size: 19px">Price</span
+                    ><br /><span style="font-size: 19px" class="text-light fs-2"
+                      ><b>US$ 20.00</b></span
+                    >
+                  </div>
+                </div>
+                <div class="mt-4 col-12 d-flex justify-content-center">
+                  <button
+                    class="button-1 text-center"
+                    style="width: 37vh; height: 5vh"
+                  >
+                    VIEW COLLECTIBLE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h3 id="nav-logo2" class="text-light text-center mb-5 mt-4">
+              WEST MYSTERY
+            </h3>
+            <div class="row" style="height: 55vh">
+              <div class="col-3 mt-5 ms-3">
+                <img
+                  src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/5tKs6wbE7CxCMbpkn5DQ.jpg"
+                  style="width: 7vh; height: 7vh; border-radius: 50px"
+                /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                  >By :</span
+                >
+                <span class="text-light fs-5" style="font-size: 19px"
+                  >Happyplayground</span
+                >
+                <br />
+                <div class="mt-3">
+                  <img
+                    src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/ShyePRsApntO.jpg"
+                    style="width: 7vh; height: 7vh; border-radius: 15px"
+                  /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                    >In :</span
+                  >
+                  <span class="text-light fs-5" style="font-size: 19px"
+                    >MYTH</span
+                  >
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/J5Tj2Fbthzu3.png"
+                  class="d-block w-100"
+                  style="max-width: 45vh; height: 48vh"
+                />
+              </div>
+              <div
+                class="col-4 box"
+                style="
+                  background-color: rgb(0, 0, 0);
+                  border: 1px solid rgba(220, 220, 220, 0.732);
+                  max-height: 20vh;
+                  margin-top: 30vh;
+                  margin-left: 5vh;
+                  border-radius: 10px;
+                "
+              >
+                <div class="row">
+                  <div class="col-5 mt-3 ms-5">
+                    <span class="sub-text" style="font-size: 19px"
+                      >Edition Quantity</span
+                    ><br /><span style="font-size: 19px" class="text-light fs-2"
+                      ><b>60</b></span
+                    >
+                  </div>
+                  <div class="col-5 mt-3 ms-4">
+                    <span class="sub-text" style="font-size: 19px">Price</span
+                    ><br /><span style="font-size: 19px" class="text-light fs-2"
+                      ><b>US$ 19.98</b></span
+                    >
+                  </div>
+                </div>
+                <div class="mt-4 col-12 d-flex justify-content-center">
+                  <button
+                    class="button-1 text-center"
+                    style="width: 37vh; height: 5vh"
+                  >
+                    VIEW COLLECTIBLE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h3 id="nav-logo2" class="text-light text-center mb-5 mt-4">
+              VG CHARACTER
+            </h3>
+            <div class="row" style="height: 55vh">
+              <div class="col-3 mt-5 ms-3">
+                <img
+                  src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/ucollex2-CreatorAvatar-02.jpg"
+                  style="width: 7vh; height: 7vh; border-radius: 50px"
+                /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                  >By :</span
+                >
+                <span class="text-light" style="font-size: 19px"
+                  >Vampire in the Garden</span
+                >
+                <br />
+                <div class="mt-3">
+                  <img
+                    src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220713/M8hQGEtxDbkyhaaQRCeK.jpeg"
+                    style="width: 7vh; height: 7vh; border-radius: 15px"
+                  /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                    >In :</span
+                  >
+                  <span class="text-light fs-5" style="font-size: 19px"
+                    >Vampire in the Garden</span
+                  >
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220713/snWyFMAzb22amx6z37mG.png"
+                  class="d-block w-100"
+                  style="max-width: 45vh; height: 48vh"
+                />
+              </div>
+              <div
+                class="col-4 box"
+                style="
+                  background-color: rgb(0, 0, 0);
+                  border: 1px solid rgba(220, 220, 220, 0.732);
+                  max-height: 20vh;
+                  margin-top: 30vh;
+                  margin-left: 5vh;
+                  border-radius: 10px;
+                "
+              >
+                <div class="row">
+                  <div class="col-5 mt-3 ms-5">
+                    <span class="sub-text" style="font-size: 19px"
+                      >Edition Quantity</span
+                    ><br /><span style="font-size: 19px" class="text-light fs-2"
+                      ><b>760</b></span
+                    >
+                  </div>
+                  <div class="col-5 mt-3 ms-4">
+                    <span class="sub-text" style="font-size: 19px">Price</span
+                    ><br /><span style="font-size: 19px" class="text-light fs-2"
+                      ><b>US$ 75.00</b></span
+                    >
+                  </div>
+                </div>
+                <div class="mt-4 col-12 d-flex justify-content-center">
+                  <button
+                    class="button-1 text-center"
+                    style="width: 37vh; height: 5vh"
+                  >
+                    VIEW COLLECTIBLE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h3 id="nav-logo2" class="text-light text-center mb-5 mt-4">
+              HAILUM 40 GL
+            </h3>
+            <div class="row" style="height: 55vh">
+              <div class="col-3 mt-5 ms-3">
+                <img
+                  src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/KYdEx6XWbdGHi5h2H2ac.png"
+                  style="width: 7vh; height: 7vh; border-radius: 50px"
+                /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                  >By :</span
+                >
+                <span class="text-light fs-5" style="font-size: 19px"
+                  >Jimmy Rice</span
+                >
+                <br />
+                <div class="mt-3">
+                  <img
+                    src="https://s3.ap-northeast-1.amazonaws.com/upload.ucollex.io/uploads/dash/na3i5rvjsIgV.png"
+                    style="width: 7vh; height: 7vh; border-radius: 15px"
+                  /><span class="sub-text ms-2 fs-5" style="font-size: 19px"
+                    >In :</span
+                  >
+                  <span class="text-light fs-5" style="font-size: 19px"
+                    >HAILUM40</span
+                  >
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://s3.ap-northeast-1.amazonaws.com/upload.ucollex.io/uploads/dash/Lark20221028-151312.png"
+                  class="d-block w-100"
+                  style="max-width: 45vh; height: 46vh"
+                />
+              </div>
+              <div
+                class="col-4 box"
+                style="
+                  background-color: rgb(0, 0, 0);
+                  border: 1px solid rgba(220, 220, 220, 0.732);
+                  max-height: 20vh;
+                  margin-top: 30vh;
+                  margin-left: 5vh;
+                  border-radius: 10px;
+                "
+              >
+                <div class="row">
+                  <div class="col-5 mt-3 ms-5">
+                    <span class="sub-text">Edition Quantity</span><br /><span
+                      class="text-light fs-2"
+                      ><b>305</b></span
+                    >
+                  </div>
+                  <div class="col-5 mt-3 ms-4">
+                    <span class="sub-text">Price</span><br /><span
+                      class="text-light fs-2"
+                      ><b>US$ 95.00</b></span
+                    >
+                  </div>
+                </div>
+                <div class="mt-4 col-12 d-flex justify-content-center">
+                  <button
+                    class="button-1 text-center"
+                    style="width: 37vh; height: 5vh"
+                  >
+                    VIEW COLLECTIBLE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- CAROUSEL-SM -->
+    <h5
+      class="h1-3 text-center text-light mb-5 d-block d-sm-none"
+      style="
+        font-size: 55px;
+        letter-spacing: -2px;
+        word-spacing: 2px;
+        margin-top: 20vh;
+      "
+    >
+      EXCLUSIVE<br /><span class="gradient-span">COLLECTIONS</span>
+    </h5>
+    <div class="container d-block d-sm-none" style="padding-bottom: 20vh">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p id="nav-logo2" class="text-light text-center mb-5">HUGO 1.0</p>
+            <div class="col-12 mt-3">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/07OlMVvuyBKm.jpg"
+                style="width: 7vh; height: 7vh; border-radius: 23px"
+              /><span class="sub-text ms-2">By</span>
+              <span class="text-light">Ben Liu</span>
+            </div>
+            <div class="col-12 mt-3">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/FvK2ZJ7fIweQ.jpeg"
+                style="width: 7vh; height: 7vh; border-radius: 10px"
+              /><span class="sub-text ms-2">In</span>
+              <span class="text-light">Down to Earth Hugo</span>
+            </div>
+            <img
+              src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/pCUWLXu9IFvR.png"
+              class="d-block w-100 mb-5"
+              style="width: 50vh; height: 45vh"
+            />
+            <div
+              class="container box"
+              style="
+                background-color: rgba(0, 0, 0, 0.5);
+                border: 3px solid rgba(255, 255, 255, 0.77);
+                padding-bottom: 13vh;
+                border-radius: 10px;
+              "
+            >
+              <div class="row">
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Edition Quantity</span><br /><span
+                    class="text-light fs-2"
+                    >50</span
+                  >
+                </div>
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Price</span><br /><span
+                    class="text-light fs-2"
+                    >US$ 20.00</span
+                  >
+                </div>
+              </div>
+              <div class="mt-5 col-12 d-flex justify-content-center">
+                <button
+                  class="button-1 text-center"
+                  style="width: 40vh; height: 8vh"
+                >
+                  VIEW COLLECTIBLE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p id="nav-logo2" class="text-light text-center mb-5">
+              WEST MYSTERY
+            </p>
+            <div class="col-12 mt-3">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/5tKs6wbE7CxCMbpkn5DQ.jpg"
+                style="width: 7vh; height: 7vh; border-radius: 23px"
+              /><span class="sub-text ms-2">By</span>
+              <span class="text-light">Happyplayground</span>
+            </div>
+            <div class="col-12 mt-3">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/ShyePRsApntO.jpg"
+                style="width: 7vh; height: 7vh; border-radius: 10px"
+              /><span class="sub-text ms-2">In</span>
+              <span class="text-light">MYTH</span>
+            </div>
+            <img
+              src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/J5Tj2Fbthzu3.png"
+              class="d-block w-100 mb-5"
+              style="width: 50vh; height: 45vh"
+            />
+            <div
+              class="container box"
+              style="
+                background-color: rgba(0, 0, 0, 0.5);
+                border: 3px solid rgba(255, 255, 255, 0.77);
+                padding-bottom: 13vh;
+                border-radius: 10px;
+              "
+            >
+              <div class="row">
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Edition Quantity</span><br /><span
+                    class="text-light fs-2"
+                    >60</span
+                  >
+                </div>
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Price</span><br /><span
+                    class="text-light fs-2"
+                    >US$ 19.98</span
+                  >
+                </div>
+              </div>
+              <div class="mt-5 col-12 d-flex justify-content-center">
+                <button
+                  class="button-1 text-center"
+                  style="width: 40vh; height: 8vh"
+                >
+                  VIEW COLLECTIBLE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p id="nav-logo2" class="text-light text-center mb-5">
+              GHOST IN THE SHELL
+            </p>
+            <div class="col-12 mt-3">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/0W9VLhAIvgJy.jpg"
+                style="width: 7vh; height: 7vh; border-radius: 23px"
+              /><span class="sub-text ms-2">By</span>
+              <span class="text-light">Ghost in the Shell</span>
+            </div>
+            <div class="col-12 mt-3">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/sjR0OxhLDzkY.jpg"
+                style="width: 7vh; height: 7vh; border-radius: 10px"
+              /><span class="sub-text ms-2">In</span>
+              <span class="text-light">L.A Comic Con 2022</span>
+            </div>
+            <img
+              src="https://s3.ap-northeast-1.amazonaws.com/upload.ucollex.io/uploads/dash/LswZ68TdPOWn.png"
+              class="d-block w-100 mb-5"
+              style="width: 50vh; height: 45vh"
+            />
+            <div
+              class="container box"
+              style="
+                background-color: rgba(0, 0, 0, 0.5);
+                border: 3px solid rgba(255, 255, 255, 0.77);
+                padding-bottom: 13vh;
+                border-radius: 10px;
+              "
+            >
+              <div class="row">
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Edition Quantity</span><br /><span
+                    class="text-light fs-2"
+                    >500</span
+                  >
+                </div>
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Price</span><br /><span
+                    class="text-light fs-2"
+                    >US$ 99.98</span
+                  >
+                </div>
+              </div>
+              <div class="mt-5 col-12 d-flex justify-content-center">
+                <button
+                  class="button-1 text-center"
+                  style="width: 40vh; height: 8vh"
+                >
+                  VIEW COLLECTIBLE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p id="nav-logo2" class="text-light text-center mb-5">
+              VG CHARACTER
+            </p>
+            <div class="col-12 mt-3">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/ucollex2-CreatorAvatar-02.jpg"
+                style="width: 7vh; height: 7vh; border-radius: 23px"
+              /><span class="sub-text ms-2">By</span>
+              <span class="text-light">Vampire in the Garden</span>
+            </div>
+            <div class="col-12 mt-3">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220713/M8hQGEtxDbkyhaaQRCeK.jpeg"
+                style="width: 7vh; height: 7vh; border-radius: 10px"
+              /><span class="sub-text ms-2">In</span>
+              <span class="text-light">Vampire in the Garden</span>
+            </div>
+            <img
+              src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220713/snWyFMAzb22amx6z37mG.png"
+              class="d-block w-100 mb-5"
+              style="width: 50vh; height: 45vh"
+            />
+            <div
+              class="container box"
+              style="
+                background-color: rgba(0, 0, 0, 0.5);
+                border: 3px solid rgba(255, 255, 255, 0.77);
+                padding-bottom: 13vh;
+                border-radius: 10px;
+              "
+            >
+              <div class="row">
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Edition Quantity</span><br /><span
+                    class="text-light fs-2"
+                    >760</span
+                  >
+                </div>
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Price</span><br /><span
+                    class="text-light fs-2"
+                    >US$ 75.00</span
+                  >
+                </div>
+              </div>
+              <div class="mt-5 col-12 d-flex justify-content-center">
+                <button
+                  class="button-1 text-center"
+                  style="width: 40vh; height: 8vh"
+                >
+                  VIEW COLLECTIBLE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p id="nav-logo2" class="text-light text-center mb-5">
+              HAILUM 40 GL
+            </p>
+            <div class="col-12 mt-3">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/KYdEx6XWbdGHi5h2H2ac.png"
+                style="width: 7vh; height: 7vh; border-radius: 23px"
+              /><span class="sub-text ms-2">By</span>
+              <span class="text-light">Jimmy Rice</span>
+            </div>
+            <div class="col-12 mt-3">
+              <img
+                src="https://s3.ap-northeast-1.amazonaws.com/upload.ucollex.io/uploads/dash/na3i5rvjsIgV.png"
+                style="width: 7vh; height: 7vh; border-radius: 10px"
+              /><span class="sub-text ms-2">In</span>
+              <span class="text-light">HAILUM40</span>
+            </div>
+            <img
+              src="https://s3.ap-northeast-1.amazonaws.com/upload.ucollex.io/uploads/dash/Lark20221028-151312.png"
+              class="d-block w-100 mb-5"
+              style="width: 50vh; height: 45vh"
+            />
+            <div
+              class="container box"
+              style="
+                background-color: rgba(89, 89, 89, 0.5);
+                border: 3px solid black;
+                padding-bottom: 13vh;
+                border-radius: 10px;
+              "
+            >
+              <div class="row">
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Edition Quantity</span><br /><span
+                    class="text-light fs-2"
+                    >305</span
+                  >
+                </div>
+                <div class="col-5 mt-2 ms-2">
+                  <span class="sub-text">Price</span><br /><span
+                    class="text-light fs-2"
+                    >US$ 95.00</span
+                  >
+                </div>
+              </div>
+              <div class="mt-5 col-12 d-flex justify-content-center">
+                <button
+                  class="button-1 text-center"
+                  style="width: 40vh; height: 8vh"
+                >
+                  VIEW COLLECTIBLE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- COLLECTIBLE -->
+    <div class="container d-none d-sm-block" style="margin-top: 25vh">
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="h1-3 text-center text-light mb-5">
+          TRENDING<br /><span class="gradient-span">COLLECTIBLES</span>
+        </h3>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210429/20210429114334AERMoC.png"
+                class="card-img-top"
+                style="width: 29.5vh; height: 29vh"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Tin Soldier</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>TS - California Gold an...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 2,000.00</b></span
+                ><br />
+                <span class="text-muted">3/1 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">INTERFERENCE</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">18</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220817/FSb7RDE53xpZwzaf4Bpf.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text"
+                  >Vampire in the Garden</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>VG Character Card Pack</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 360.00</b></span
+                ><br />
+                <span class="text-muted">1/12,000 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/ucollex2-CreatorAvatar-02.jpg"
+                      style="width: 3.2vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Vamp in the Garden</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      id="clickable-image"
+                      src="image/heart-1.png"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">24</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/oc438WFlqarm.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text"
+                  >KIBO THE SPACE SUNRISE</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>KIBO Astronaut Mystery...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 34.99</b></span
+                ><br />
+                <span class="text-muted">3/1 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/tKruEp9enRaf.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">KIBO</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      id="clickable-image"
+                      src="image/heart-1.png"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">4</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220112/GGGFEcafNpnxmA8kCahy.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Moriwo Art Series</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>謳うAI</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 80.00</b></span
+                ><br />
+                <span class="text-muted">15/15 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20210429/20210429110209Vzg98T.png"
+                      style="width: 3vh; height: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Moriwo</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      id="clickable-image"
+                      src="image/heart-1.png"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">9</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row mt-3">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211230/MKmJjEdHQbDNrKCwB5Pm.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Nyan</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Mickey Mic's Mystery Box</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 60.00</b></span
+                ><br />
+                <span class="text-muted">3/200 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/MicrosoftTeams-image.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Mickey Mic</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      id="clickable-image"
+                      src="image/heart-1.png"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">9</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/2NCBywY1lLSW.png"
+                style="height: 29.5vh"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">L.A. Comic Con 2022</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Ghost in the Shell</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 1,149.00</b></span
+                ><br />
+                <span class="text-muted">493/500 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/0W9VLhAIvgJy.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text"> Ghost in the Shell</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      id="clickable-image"
+                      src="image/heart-1.png"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">4</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211228/5p7a5AXi5xy44as3bxzj.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">HAILUM40</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>HAILUM40</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 300.00</b></span
+                ><br />
+                <span class="text-muted">2/4 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/KYdEx6XWbdGHi5h2H2ac.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Jimmy Rice</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">13</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211221/FtE3WnWjDMpkn48sA8ma.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">SPARKLE COLLECTION</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>SPARKLE COLLECTION X...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 80.00</b></span
+                ><br />
+                <span class="text-muted">5/20 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20211222/rXrMDNH2MAbjdwfJS6zw.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Sparkle Collection</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">16</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row mt-3">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220103/KbMmXCiJQP37wnzwrHS4.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Healing</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Campfire</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 50.00</b></span
+                ><br />
+                <span class="text-muted">39/40 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/ucollex2-CreatorAvatar-01.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">LOSZEHAHA</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">7</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/dOP7iueYnKJ2.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">L.A. Comic Con 2022</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Fairy Tail Card Pack</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 39.99</b></span
+                ><br />
+                <span class="text-muted">2/1,000 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/XFZtphCkaA0r.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Fairy Tail</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">3</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220804/2WYzEak3CXmtdYGjrT4d.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text"
+                  >Sneaker Street Festival 2022</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Sneaker Street Festival...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 19.98</b></span
+                ><br />
+                <span class="text-muted">5/43 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="image/icon-1.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">COL UI</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2 mt-3">8</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220301/JxyJhbX36pGF3XXyYk4y.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Mad Barbarians</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Death Banana</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 20.00</b></span
+                ><br />
+                <span class="text-muted">2,852/3,000 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20211222/rXrMDNH2MAbjdwfJS6zw.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Mad Barbarians</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">11</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row mt-3">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211119/cEYiAknpPsN5z8rGEMHA.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Tin Soldier</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>TS - Franken Green</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 180,000.00</b></span
+                ><br />
+                <span class="text-muted">1/10 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">INTERFERENCE</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">12</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220727/wYamJ7D6yZNnyGCESzPr.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">ACGHK 2022</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>ACG 2022 Coin</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 29.99</b></span
+                ><br />
+                <span class="text-muted">3/10,000 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="image/icon-1.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">COL UI</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">34</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220104/D5ApNaTyFNCnSFWRpdAQ.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">ktym Art Series</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Curse</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 40.00</b></span
+                ><br />
+                <span class="text-muted">27/30 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20210429/20210429105142nmsDqg.png"
+                      style="width: 3vh; height: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text"> ktym</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">12</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210429/20210429135554MRmyxv.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">MADminds</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Virtual Genius</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 5,000.00</b></span
+                ><br />
+                <span class="text-muted">3/10 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text"> INTERFERENCE</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">8</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row mt-3">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220126/mmbKZHA3G8TXcRPd367N.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">MicNie</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Lucky MicNie</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 300.00</b></span
+                ><br />
+                <span class="text-muted">3/8 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/MicrosoftTeams-image.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text"> Mickey Mic</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">9</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210720/3Qkk86GXcmCFiprfyFiM.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Henry I.AM</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Komuso</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 40.00</b></span
+                ><br />
+                <span class="text-muted">74/100 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/iyd6wzXTjfi8TfmSP3mQ.jpeg"
+                      style="width: 3vh; height: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Henry I.AM</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">5</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210719/hx7Ej4JJi46PHrAtzN68.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Happiplayground</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Bunni</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 20.00</b></span
+                ><br />
+                <span class="text-muted">91/100 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/5tKs6wbE7CxCMbpkn5DQ.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text"> Happiplayground</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">19</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/jHgnZMJ42E9d.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">L.A. Comic Con 2022</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Lucy Heartfilia</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 30.00</b></span
+                ><br />
+                <span class="text-muted">1/333 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/XFZtphCkaA0r.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Fairy Tail</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">19</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row mt-3">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220131/QxSXGRFH2amS4BNyy5y6.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Tin Soldier</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Tin Soldier - Grenade...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 400.00</b></span
+                ><br />
+                <span class="text-muted">1/10 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">INTERFERENCE</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">21</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210721/BhQC3RD8PkwHCn8kNRdn.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">KMB</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>KMB LEYLAND Victory M...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 40.00</b></span
+                ><br />
+                <span class="text-muted">9/999 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/dWTYSSrPrJym6ZBxmnbi.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Tiny 微影</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">14</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210720/jjJiaWQsP5M4FR88PdpC.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">CMB</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>CMB LEYLAND Victory M...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 40.00</b></span
+                ><br />
+                <span class="text-muted">7/999 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/dWTYSSrPrJym6ZBxmnbi.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text"> Tiny 微影</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">16</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211026/NJJKbEX26d2TDXG3S6Mx.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Tin Soldier</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Tin Soldier Monochrome</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 800.00</b></span
+                ><br />
+                <span class="text-muted">3/10 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">INTERFERENCE</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">21</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row mt-3">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211228/6N8PsGhc6Z3wDnk3etpk.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Tin Soldier</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Tin Soldier - Bionic Black</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 450.00</b></span
+                ><br />
+                <span class="text-muted">3/10 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">INTERFERENCE</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">14</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220514/dQtCbkeJtTjW2C3ixFpx.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text"
+                  >LIMITS ASIAN CHAMPIONSHIP...</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>LIMITS ACS HK Mystery</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 29.99</b></span
+                ><br />
+                <span class="text-muted">2/10,000 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220322/34YQkdSmFX67cFeQPZzj.jpeg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">LIMITS AC</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">18</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211221/KfrdNFi34AKZt6xW3ajx.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">SPARKLE COLLECTION</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>SPARKLE COLLECTION x...</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 300.00</b></span
+                ><br />
+                <span class="text-muted">3/10 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20211222/rXrMDNH2MAbjdwfJS6zw.jpg"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Sparkle Collection</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">7</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220112/YGnmwWZh3KQ4JH58iEnK.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Tinbot</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Tinbot the Scooter</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 40.00</b></span
+                ><br />
+                <span class="text-muted">29/35 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220531/QPCAXjh3izGsBrbmaz5b.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Tinbot</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">4</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="row mt-3">
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220308/wMzBXSJzAjt4JJXaEdcy.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Woman UP!</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Woman UP!</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 30.00</b></span
+                ><br />
+                <span class="text-muted">278/300 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220306/FdsGC7x6PHcZHH6ZPdWW.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">UDonate</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">4</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211208/ScHwmktMS83CECyHJtQ6.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text"
+                  >lolohoihoi - Travel the World.</span
+                ><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>lolohoihoi@osaka</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 30.00</b></span
+                ><br />
+                <span class="text-muted">45/50 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/5CYRP87pwQQfWSwsYJ3F.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Lolohoihoi</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">1</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211029/FSHn76m5CNtThw6yRcTX.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Nyan</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Candy Nyan</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 100.00</b></span
+                ><br />
+                <span class="text-muted">5/8 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/MicrosoftTeams-image.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Mickey Mic</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">1</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="card ms-1 mb-4"
+              style="width: 33vh; height: 57vh; border-radius: 10px"
+            >
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220601/ibCBRjCeRWyJSzG4aHMz.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <span id="pink-text" class="card-text">Formu1ape</span><br />
+                <div class="my-2">
+                  <span class="fs-5"><b>Formu1ape Mystery Box</b></span
+                  ><br />
+                </div>
+                <span class="text-muted mt-3">Buy Now</span>
+                <br />
+                <span><b>US$ 14.99</b></span
+                ><br />
+                <span class="text-muted">817/1,000 Available</span><br />
+                <div class="row mt-5">
+                  <div class="col-9">
+                    <img
+                      src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/a7KPGhbsATrHdtQ8r6w4.png"
+                      style="width: 3vh; border-radius: 25px"
+                    />
+                    <span id="pink-text">Winson Ma</span>
+                  </div>
+                  <span class="col-3"
+                    ><img
+                      src="image/heart-1.png"
+                      id="clickable-image"
+                      style="width: 2vh; cursor: pointer"
+                    /><span id="text-number" class="ms-2">7</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COLLECTIBLE-SM-->
+    <div class="container d-block d-sm-none">
+      <h5
+        class="h1-3 text-center text-light mb-5 d-block d-sm-none"
+        style="
+          font-size: 55px;
+          letter-spacing: -2px;
+          word-spacing: 2px;
+          margin-top: 20vh;
+        "
+      >
+        TRENDING<br /><span class="gradient-span">COLLECTIBLES</span>
+      </h5>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210429/20210429114334AERMoC.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Tin Soldier</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>TS - California Gold and Pink</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 2,000.00</b></span
+          ><br />
+          <span class="text-muted">3/1 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">INTERFERENCE</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">18</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220817/FSb7RDE53xpZwzaf4Bpf.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Vampire in the Garden</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>VG Character Card Pack</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 360.00</b></span
+          ><br />
+          <span class="text-muted">1/12,000 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/ucollex2-CreatorAvatar-02.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Vampire in the Garden</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">24</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/oc438WFlqarm.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">KIBO THE SPACE SUNRISE</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>KIBO Astronaut Mystery Box</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 34.99</b></span
+          ><br />
+          <span class="text-muted">3/1 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/tKruEp9enRaf.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">KIBO</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">4</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220112/GGGFEcafNpnxmA8kCahy.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Moriwo Art Series</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>謳うAI</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 80.00</b></span
+          ><br />
+          <span class="text-muted">15/15 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20210429/20210429110209Vzg98T.png"
+                style="width: 5vh; height: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Moriwo</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">9</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211230/MKmJjEdHQbDNrKCwB5Pm.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Nyan</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Mickey Mic's Mystery Box</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 60.00</b></span
+          ><br />
+          <span class="text-muted">3/200 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/MicrosoftTeams-image.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Mickey Mic</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">9</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/2NCBywY1lLSW.png"
+          style="height: 46vh"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">L.A. Comic Con 2022</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Ghost in the Shell</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 1,149.00</b></span
+          ><br />
+          <span class="text-muted">493/500 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/0W9VLhAIvgJy.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text"> Ghost in the Shell</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">4</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211228/5p7a5AXi5xy44as3bxzj.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">HAILUM40</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>HAILUM40</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 300.00</b></span
+          ><br />
+          <span class="text-muted">2/4 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/KYdEx6XWbdGHi5h2H2ac.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Jimmy Rice</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">13</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211221/FtE3WnWjDMpkn48sA8ma.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">SPARKLE COLLECTION</span><br />
+          <div class="my-2">
+            <span id="text-number" class="fs-5"
+              ><b>SPARKLE COLLECTION X RED</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 80.00</b></span
+          ><br />
+          <span class="text-muted">5/20 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20211222/rXrMDNH2MAbjdwfJS6zw.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Sparkle Collection</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">16</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220103/KbMmXCiJQP37wnzwrHS4.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Healing</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Campfire</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 50.00</b></span
+          ><br />
+          <span class="text-muted">39/40 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/ucollex2-CreatorAvatar-01.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">LOSZEHAHA</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">7</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/dOP7iueYnKJ2.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">L.A. Comic Con 2022</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Fairy Tail Card Pack</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 39.99</b></span
+          ><br />
+          <span class="text-muted">2/1,000 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/XFZtphCkaA0r.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Fairy Tail</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">3</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220804/2WYzEak3CXmtdYGjrT4d.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text"
+            >Sneaker Street Festival 2022</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Sneaker Street Festival 2022</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 19.98</b></span
+          ><br />
+          <span class="text-muted">5/43 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="image/icon-1.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">COL UI</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2 mt-3">8</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220301/JxyJhbX36pGF3XXyYk4y.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Mad Barbarians</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Death Banana</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 20.00</b></span
+          ><br />
+          <span class="text-muted">2,852/3,000 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20211222/rXrMDNH2MAbjdwfJS6zw.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Mad Barbarians</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">11</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211119/cEYiAknpPsN5z8rGEMHA.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Tin Soldier</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>TS - Franken Green</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 180,000.00</b></span
+          ><br />
+          <span class="text-muted">1/10 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">INTERFERENCE</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">12</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220727/wYamJ7D6yZNnyGCESzPr.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">ACGHK 2022</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>ACG 2022 Coin</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 29.99</b></span
+          ><br />
+          <span class="text-muted">3/10,000 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="image/icon-1.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">COL UI</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">34</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220104/D5ApNaTyFNCnSFWRpdAQ.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">ktym Art Series</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Curse</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 40.00</b></span
+          ><br />
+          <span class="text-muted">27/30 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20210429/20210429105142nmsDqg.png"
+                style="width: 5vh; height: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text"> ktym</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">12</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210429/20210429135554MRmyxv.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">MADminds</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Virtual Genius</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 5,000.00</b></span
+          ><br />
+          <span class="text-muted">3/10 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text"> INTERFERENCE</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">8</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220126/mmbKZHA3G8TXcRPd367N.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">MicNie</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Lucky MicNie</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 300.00</b></span
+          ><br />
+          <span class="text-muted">3/8 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/MicrosoftTeams-image.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text"> Mickey Mic</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">9</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210720/3Qkk86GXcmCFiprfyFiM.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Henry I.AM</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Komuso</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 40.00</b></span
+          ><br />
+          <span class="text-muted">74/100 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/iyd6wzXTjfi8TfmSP3mQ.jpeg"
+                style="width: 5vh; height: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Henry I.AM</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">5</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210719/hx7Ej4JJi46PHrAtzN68.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Happiplayground</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Bunni</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 20.00</b></span
+          ><br />
+          <span class="text-muted">91/100 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/5tKs6wbE7CxCMbpkn5DQ.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text"> Happiplayground</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">19</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://upload.ucollex.io/cdn-cgi/image/width=512/uploads/dash/jHgnZMJ42E9d.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">L.A. Comic Con 2022</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Lucy Heartfilia</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 30.00</b></span
+          ><br />
+          <span class="text-muted">1/333 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/XFZtphCkaA0r.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Fairy Tail</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">19</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220131/QxSXGRFH2amS4BNyy5y6.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Tin Soldier</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Tin Soldier - Grenade Green</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 400.00</b></span
+          ><br />
+          <span class="text-muted">1/10 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">INTERFERENCE</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">21</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210721/BhQC3RD8PkwHCn8kNRdn.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">KMB</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>KMB LEYLAND Victory Mk 2</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 40.00</b></span
+          ><br />
+          <span class="text-muted">9/999 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/dWTYSSrPrJym6ZBxmnbi.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Tiny 微影</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">14</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20210720/jjJiaWQsP5M4FR88PdpC.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">CMB</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>CMB LEYLAND Victory Mk 2</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 40.00</b></span
+          ><br />
+          <span class="text-muted">7/999 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/dWTYSSrPrJym6ZBxmnbi.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text"> Tiny 微影</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">16</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211026/NJJKbEX26d2TDXG3S6Mx.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Tin Soldier</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Tin Soldier Monochrome</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 800.00</b></span
+          ><br />
+          <span class="text-muted">3/10 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">INTERFERENCE</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">21</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211228/6N8PsGhc6Z3wDnk3etpk.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Tin Soldier</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Tin Soldier - Bionic Black</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 450.00</b></span
+          ><br />
+          <span class="text-muted">3/10 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220725/A4wWPCpB5687M87FAQYX.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">INTERFERENCE</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">14</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220514/dQtCbkeJtTjW2C3ixFpx.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text"
+            >LIMITS ASIAN CHAMPIONSHIP 2022</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>LIMITS ACS HK Mystery</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 29.99</b></span
+          ><br />
+          <span class="text-muted">2/10,000 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220322/34YQkdSmFX67cFeQPZzj.jpeg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">LIMITS AC</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">18</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211221/KfrdNFi34AKZt6xW3ajx.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">SPARKLE COLLECTION</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>SPARKLE COLLECTION x WIN</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 300.00</b></span
+          ><br />
+          <span class="text-muted">3/10 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20211222/rXrMDNH2MAbjdwfJS6zw.jpg"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Sparkle Collection</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">7</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220112/YGnmwWZh3KQ4JH58iEnK.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Tinbot</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Tinbot the Scooter</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 40.00</b></span
+          ><br />
+          <span class="text-muted">29/35 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220531/QPCAXjh3izGsBrbmaz5b.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Tinbot</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">4</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220308/wMzBXSJzAjt4JJXaEdcy.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Woman UP!</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Woman UP!</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 30.00</b></span
+          ><br />
+          <span class="text-muted">278/300 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220306/FdsGC7x6PHcZHH6ZPdWW.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">UDonate</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">4</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211208/ScHwmktMS83CECyHJtQ6.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text"
+            >lolohoihoi - Travel the World.</span
+          ><br />
+          <div class="my-2">
+            <span class="fs-5"><b>lolohoihoi@osaka</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 30.00</b></span
+          ><br />
+          <span class="text-muted">45/50 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/5CYRP87pwQQfWSwsYJ3F.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Lolohoihoi</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">1</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20211029/FSHn76m5CNtThw6yRcTX.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Nyan</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Candy Nyan</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 100.00</b></span
+          ><br />
+          <span class="text-muted">5/8 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://upload.ucollex.io/cdn-cgi/image/width=100/uploads/dash/MicrosoftTeams-image.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Mickey Mic</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">1</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card ms-1 mb-4"
+        style="width: 51vh; height: 83vh; border-radius: 10px"
+      >
+        <img
+          src="https://res.ucollex.io/cdn-cgi/image/width=512/images/20220601/ibCBRjCeRWyJSzG4aHMz.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <span id="pink-text" class="card-text">Formu1ape</span><br />
+          <div class="my-2">
+            <span class="fs-5"><b>Formu1ape Mystery Box</b></span
+            ><br />
+          </div>
+          <span class="text-muted mt-3">Buy Now</span>
+          <br />
+          <span><b>US$ 14.99</b></span
+          ><br />
+          <span class="text-muted">817/1,000 Available</span><br />
+          <div class="row mt-4">
+            <div class="col-9">
+              <img
+                src="https://res.ucollex.io/cdn-cgi/image/width=100/images/20220721/a7KPGhbsATrHdtQ8r6w4.png"
+                style="width: 5vh; border-radius: 25px"
+              />
+              <span id="pink-text">Winson Ma</span>
+            </div>
+            <span class="col-3"
+              ><img
+                src="image/heart-1.png"
+                id="clickable-image"
+                style="width: 3vh"
+              /><span id="text-number" class="ms-2">7</span></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="d-none d-sm-block" style="margin-top: 20vh">
+      <div class="Svg" style="position: relative">
+        <div class="custom-shape-divider-bottom-1676534350">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <rect x="1200" height="3.6"></rect>
+            <rect height="3.6"></rect>
+            <path
+              d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div id="footer-2" class="container">
+        <div class="row mb-5">
+          <div class="col-7">
+            <h1 id="head" class="h1 display-3 text-light">
+              JOIN OUR<br /><span class="gradient-span">COMMUNITY</span>
+            </h1>
+          </div>
+          <div id="head" class="col-3 text-light">
+            <a class="text-hover nav-link" href="">DISCOVER</a>
+            <a class="text-hover nav-link mt-1" href="">THE BLUEPRINT</a>
+            <a class="text-hover nav-link mt-1" href="">MEDIA KIT</a>
+            <a class="text-hover nav-link mt-1" href="">BLOG</a>
+          </div>
+          <div id="head" class="col-2 text-end">
+            <div class="row mt-2">
+              <a
+                class="col-3 nav-link"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <img id="twitter" src="image/twitter.png" />
+              </a>
+              <a
+                class="col-3 ms-1 nav-link"
+                href="https://discord.com/"
+                target="_blank"
+              >
+                <img id="discord" src="image/discord.png" />
+              </a>
+              <a
+                class="col-3 nav-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <img id="linked-in" src="image/linked-in.png" />
+              </a>
+            </div>
+            <div class="row mt-3">
+              <a
+                class="col-3 nav-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img id="facebook" src="image/facebook.png" />
+              </a>
+              <a
+                class="col-3 me-2 nav-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <img id="instagram" src="image/instagram.png" />
+              </a>
+              <a
+                class="col-3 nav-link"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <img id="youtube" src="image/youtube.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER-SM -->
+    <footer class="d-block d-sm-none" style="margin-top: 20vh">
+      <div class="Svg" style="position: relative">
+        <div class="custom-shape-divider-bottom-1676534350">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <rect x="1200" height="3.6"></rect>
+            <rect height="3.6"></rect>
+            <path
+              d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div id="footer-2" class="container">
+        <div class="row mb-5">
+          <div class="col-6">
+            <h1
+              class="h1 display-4 text-light mt-5"
+              style="letter-spacing: -1px"
+            >
+              JOIN OUR<br /><span class="gradient-span">COMMUNITY</span>
+            </h1>
+            <div class="text-light mt-5">
+              <a class="text-hover nav-link" href="">DISCOVER</a>
+              <a class="text-hover nav-link mt-1" href="">THE BLUEPRINT</a>
+              <a class="text-hover nav-link mt-1" href="">MEDIA KIT</a>
+              <a class="text-hover nav-link mt-1" href="">BLOG</a>
+            </div>
+          </div>
+          <div class="col-6 text-end" style="margin-top: 160px">
+            <div class="row mt-2">
+              <a
+                class="col-3 nav-link"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <img id="twitter" src="image/twitter.png" />
+              </a>
+              <a
+                class="col-3 ms-1 nav-link"
+                href="https://discord.com/"
+                target="_blank"
+              >
+                <img id="discord" src="image/discord.png" />
+              </a>
+              <a
+                class="col-3 nav-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <img id="linked-in" src="image/linked-in.png" />
+              </a>
+            </div>
+            <div class="row mt-3">
+              <a
+                class="col-3 nav-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img id="facebook" src="image/facebook.png" />
+              </a>
+              <a
+                class="col-3 me-2 nav-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <img id="instagram" src="image/instagram.png" />
+              </a>
+              <a
+                class="col-3 nav-link"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <img id="youtube" src="image/youtube.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="get-access.js"></script>
+</html>
